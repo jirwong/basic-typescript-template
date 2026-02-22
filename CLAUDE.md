@@ -21,15 +21,18 @@ This is a minimal TypeScript template project. The structure is straightforward:
 ## Technology Stack
 
 ### Core
+
 - **TypeScript 5.9.3** - Language and compiler
 - **ts-node 10.9.2** - Allows running TypeScript files directly
 - **@types/node 25.3.0** - Type definitions for Node.js APIs
 
 ### Build & Code Quality
+
 - **Prettier 3.8.1** - Code formatter for consistent style
 - **pnpm 10.26.1** - Package manager (see `packageManager` field in package.json)
 
 ### Dependencies
+
 - **es-toolkit 1.44.0** - Utility library with modern JavaScript functions
 
 ## Development Notes

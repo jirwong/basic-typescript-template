@@ -1,7 +1,5 @@
-import { fill } from 'es-toolkit';
-
-function test(input: String) {
-  console.log('Hello!');
+function test(input: string) {
+  console.log('Hello.');
   console.log('String received: ', input);
 }
 
