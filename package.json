@@ -9,10 +9,10 @@
     "dev": "esbuild src/index.ts --bundle --platform=node --outfile=dist/index.js && node dist/index.js",
     "dev:watch": "nodemon --watch src --ext ts --exec 'esbuild src/index.ts --bundle --platform=node --outfile=dist/index.js && node dist/index.js'",
     "typecheck": "tsc --noEmit",
-    "format": "prettier --write .",
-    "format:check": "prettier --check .",
-    "lint": "eslint src",
-    "lint:fix": "eslint src --fix",
+    "format": "biome format --write .",
+    "format:check": "biome format .",
+    "lint": "biome lint src",
+    "lint:fix": "biome lint --write src",
     "test": "vitest run",
     "test:watch": "vitest"
   },
@@ -21,13 +21,9 @@
   "license": "ISC",
   "packageManager": "pnpm@10.26.1",
   "devDependencies": {
-    "@eslint/js": "^10.0.1",
+    "@biomejs/biome": "^2.4.4",
     "@types/node": "^25.3.0",
-    "@typescript-eslint/eslint-plugin": "^8.56.0",
-    "@typescript-eslint/parser": "^8.56.0",
     "esbuild": "^0.27.3",
-    "eslint": "^10.0.1",
-    "eslint-config-prettier": "^10.1.8",
     "lefthook": "^2.1.1",
     "lint-staged": "^16.2.7",
     "nodemon": "^3.1.14",
@@ -43,12 +39,8 @@
     "zod": "^4.3.6"
   },
   "lint-staged": {
-    "*.{ts,tsx}": [
-      "eslint --fix",
-      "prettier --write"
-    ],
-    "*.{json,md,yml,yaml}": [
-      "prettier --write"
+    "*.{ts,tsx,json,md,yml,yaml}": [
+      "biome check --write"
     ]
   }
 }
