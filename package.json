@@ -37,7 +37,10 @@
     "vitest": "^4.0.18"
   },
   "dependencies": {
-    "es-toolkit": "^1.44.0"
+    "@t3-oss/env-core": "^0.13.10",
+    "dotenv": "^17.3.1",
+    "es-toolkit": "^1.44.0",
+    "zod": "^4.3.6"
   },
   "lint-staged": {
     "*.{ts,tsx}": [
