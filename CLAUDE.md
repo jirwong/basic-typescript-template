@@ -4,14 +4,25 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Quick Commands
 
-- **`pnpm dev`** - Build and run TypeScript with esbuild
-- **`pnpm dev:watch`** - Watch src directory and rebuild/rerun on changes (using nodemon)
-- **`pnpm build`** - Compile TypeScript to JavaScript in `./dist` directory
+### Build & Development
+
+- **`pnpm build`** - Compile TypeScript to JavaScript with esbuild
+- **`pnpm dev`** - Build with esbuild and run
+- **`pnpm dev:watch`** - Watch src directory and rebuild/rerun on changes using nodemon wrapping esbuild
+
+### Type Checking & Linting
+
 - **`pnpm typecheck`** - Type-check without emitting code (using tsc)
 - **`pnpm lint`** - Run ESLint on src directory
 - **`pnpm lint:fix`** - Run ESLint with auto-fix enabled
+
+### Testing
+
 - **`pnpm test`** - Run tests once with Vitest
 - **`pnpm test:watch`** - Run tests in watch mode with Vitest
+
+### Formatting
+
 - **`pnpm format`** - Format all code using Prettier
 - **`pnpm format:check`** - Check code formatting without making changes
 
@@ -54,13 +65,25 @@ This is a minimal TypeScript template project. The structure is straightforward:
 
 ## Development Notes
 
+### Setup
+
 - **Node.js 22.16.0** is required (specified in `.node-version` and `.nvmrc` for version managers)
 - TypeScript strict mode is enabled, so all files must have proper type annotations
 - Source code should be written in the `src/` directory with `.ts` extension
 - Pre-commit hooks are configured with Lefthook:
   - Runs ESLint and Prettier on staged TypeScript files
   - Run `pnpm prepare` to install hooks (automatically run on `npm install`)
-- Use `pnpm dev:watch` for fast iteration with auto-rebuild and auto-rerun
+
+### Build & Development Workflow
+
+- **esbuild** is used to compile TypeScript and bundle for Node.js platform
+- **nodemon** monitors the `src` directory for changes and automatically rebuilds and reruns with esbuild
+- Use `pnpm dev` to build and run once
+- Use `pnpm dev:watch` for fast iteration with auto-rebuild and auto-rerun (recommended for development)
+- Use `pnpm build` before deployment or when you need compiled JavaScript output in `./dist`
+
+### Testing & Linting
+
 - Use `pnpm test:watch` during development for test-driven development
 - Use `pnpm lint` to check for code issues before committing
 - Use `pnpm build` before deployment or when you need compiled JavaScript output
