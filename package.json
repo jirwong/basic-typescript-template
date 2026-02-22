@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "prepare": "lefthook install",
     "build": "esbuild src/index.ts --bundle --platform=node --outfile=dist/index.js",
     "dev": "esbuild src/index.ts --bundle --platform=node --outfile=dist/index.js && node dist/index.js",
     "dev:watch": "nodemon --watch src --ext ts --exec 'esbuild src/index.ts --bundle --platform=node --outfile=dist/index.js && node dist/index.js'",
@@ -26,6 +27,8 @@
     "esbuild": "^0.27.3",
     "eslint": "^10.0.1",
     "eslint-config-prettier": "^10.1.8",
+    "lefthook": "^2.1.1",
+    "lint-staged": "^16.2.7",
     "nodemon": "^3.1.14",
     "prettier": "^3.8.1",
     "tsx": "^4.21.0",
@@ -33,5 +36,14 @@
   },
   "dependencies": {
     "es-toolkit": "^1.44.0"
+  },
+  "lint-staged": {
+    "*.{ts,tsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.{json,md,yml,yaml}": [
+      "prettier --write"
+    ]
   }
 }
