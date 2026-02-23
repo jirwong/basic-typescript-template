@@ -89,6 +89,13 @@ This is a minimal TypeScript template project. The structure is straightforward:
 - Use `pnpm build` before deployment or when you need compiled JavaScript output
 - Use `pnpm typecheck` to verify type safety without building
 
+## Git Commits
+
+- Keep commit messages short and focused — one logical change per commit
+- Use the imperative mood for the subject line (e.g. `Add feature`, `Fix bug`, `Remove unused dep`)
+- Subject line should be 50 characters or fewer
+- If more context is needed, add a blank line followed by a body (wrap at 72 characters)
+
 ## Code Formatting
 
 Prettier is configured for consistent code formatting:
