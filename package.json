@@ -1,7 +1,7 @@
 {
   "name": "basic-typescript",
   "version": "1.0.0",
-  "description": "",
+  "description": "A minimal TypeScript template for Node.js projects",
   "scripts": {
     "prepare": "lefthook install",
     "build": "esbuild src/index.ts --bundle --platform=node --outfile=dist/index.js",
@@ -29,7 +29,6 @@
     "eslint-config-prettier": "^10.1.8",
     "lefthook": "^2.1.1",
     "lint-staged": "^16.2.7",
-    "nodemon": "^3.1.14",
     "prettier": "^3.8.1",
     "tsx": "^4.21.0",
     "typescript": "^5.9.3",
