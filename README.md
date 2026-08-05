@@ -68,6 +68,8 @@ pnpm test:watch
 ├── package.json           # Dependencies and scripts
 ├── prettier.config.mjs    # Prettier configuration
 ├── vitest.config.ts       # Vitest configuration
+├── .oxlintrc.json         # oxlint configuration
+├── .editorconfig          # Editor-agnostic settings
 ├── lefthook.yml           # Git hooks configuration
 ├── .gitattributes         # Line-ending normalization (LF)
 ├── .github/               # CI, Dependabot, and issue/PR templates
