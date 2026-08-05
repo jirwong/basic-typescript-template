@@ -39,6 +39,8 @@ This file provides guidance to AI coding agents when working with code in this r
 ├── tsconfig.json            # TypeScript config (strict, ES2023, NodeNext)
 ├── prettier.config.mjs       # Prettier config
 ├── vitest.config.ts          # Vitest config (coverage)
+├── .oxlintrc.json            # oxlint config
+├── .editorconfig             # Editor-agnostic settings
 ├── lefthook.yml              # Git hooks
 ├── pnpm-workspace.yaml       # pnpm workspace & settings
 ├── .gitattributes            # Line-ending normalization (LF)
