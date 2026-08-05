@@ -7,7 +7,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 ### Build & Development
 
 - **`pnpm build`** - Compile TypeScript to JavaScript with esbuild
-- **`pnpm dev`** - Build with esbuild and run
+- **`pnpm dev`** - Run the TypeScript entry point with tsx
 - **`pnpm dev:watch`** - Watch src directory and rebuild/rerun on changes using tsx watch
 
 ### Type Checking & Linting
@@ -77,7 +77,7 @@ This is a minimal TypeScript template project. The structure is straightforward:
 
 - **esbuild** is used to compile TypeScript and bundle for Node.js platform
 - **tsx** watches the `src` directory for changes and automatically rebuilds and reruns
-- Use `pnpm dev` to build and run once
+- Use `pnpm dev` to run the TypeScript entry point
 - Use `pnpm dev:watch` for fast iteration with auto-rebuild and auto-rerun (recommended for development)
 - Use `pnpm build` before deployment or when you need compiled JavaScript output in `./dist`
 

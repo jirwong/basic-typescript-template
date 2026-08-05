@@ -39,18 +39,20 @@ pnpm test:watch
 
 ## Available Commands
 
-| Command             | Purpose                                     |
-| ------------------- | ------------------------------------------- |
-| `pnpm dev`          | Build and run TypeScript with esbuild       |
-| `pnpm dev:watch`    | Watch src and rebuild/rerun on changes      |
-| `pnpm build`        | Compile TypeScript to JavaScript in `dist/` |
-| `pnpm typecheck`    | Type-check without emitting code            |
-| `pnpm lint`         | Run ESLint on src directory                 |
-| `pnpm lint:fix`     | Run ESLint with auto-fix                    |
-| `pnpm test`         | Run tests once with Vitest                  |
-| `pnpm test:watch`   | Run tests in watch mode                     |
-| `pnpm format`       | Format all code with Prettier               |
-| `pnpm format:check` | Check formatting without changes            |
+| Command              | Purpose                                     |
+| -------------------- | ------------------------------------------- |
+| `pnpm dev`           | Run the TypeScript entry point with tsx     |
+| `pnpm dev:watch`     | Watch src and re-run on changes             |
+| `pnpm build`         | Compile TypeScript to JavaScript in `dist/` |
+| `pnpm typecheck`     | Type-check without emitting code            |
+| `pnpm lint`          | Run ESLint on src directory                 |
+| `pnpm lint:fix`      | Run ESLint with auto-fix                    |
+| `pnpm test`          | Run tests once with Vitest                  |
+| `pnpm test:watch`    | Run tests in watch mode                     |
+| `pnpm test:coverage` | Run tests and report code coverage          |
+| `pnpm format`        | Format all code with Prettier               |
+| `pnpm format:check`  | Check formatting without changes            |
+| `pnpm check`         | Run typecheck, lint, test, and format check |
 
 ## Project Structure
 
