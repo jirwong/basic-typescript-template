@@ -13,8 +13,8 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 ### Type Checking & Linting
 
 - **`pnpm typecheck`** - Type-check without emitting code (using tsc)
-- **`pnpm lint`** - Run ESLint on src directory
-- **`pnpm lint:fix`** - Run ESLint with auto-fix enabled
+- **`pnpm lint`** - Run oxlint on src directory
+- **`pnpm lint:fix`** - Run oxlint with auto-fix enabled
 
 ### Testing
 
@@ -41,7 +41,7 @@ This is a minimal TypeScript template project. The structure is straightforward:
 
 ### Core
 
-- **TypeScript 6.0.3** - Language and compiler with strict mode
+- **TypeScript 7.0.2** - Language and compiler with strict mode
 - **esbuild 0.28.1** - Fast JavaScript bundler and compiler
 - **tsx 4.23.7** - TypeScript executor for running TypeScript files
 - **@types/node 24.13.3** - Type definitions for Node.js APIs
@@ -49,7 +49,7 @@ This is a minimal TypeScript template project. The structure is straightforward:
 ### Build & Development Tools
 
 - **Vitest 4.1.10** - Fast unit test framework
-- **ESLint 10.8.0** - Code linting with TypeScript support
+- **oxlint 1.77.0** - Fast Rust-based code linter
 - **Prettier 3.9.6** - Code formatter for consistent style
 - **Lefthook 2.1.10** - Git hooks manager for automated checks
 - **lint-staged 17.3.0** - Run linters on staged files
@@ -69,7 +69,7 @@ This is a minimal TypeScript template project. The structure is straightforward:
 - TypeScript strict mode is enabled, so all files must have proper type annotations
 - Source code should be written in the `src/` directory with `.ts` extension
 - Pre-commit hooks are configured with Lefthook:
-  - Runs ESLint and Prettier on staged TypeScript files
+  - Runs oxlint and Prettier on staged TypeScript files
   - Run `pnpm prepare` to install hooks (automatically run on `npm install`)
 
 ### Build & Development Workflow

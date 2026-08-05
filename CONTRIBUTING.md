@@ -32,7 +32,7 @@ pnpm install   # installs deps and git hooks (Lefthook)
 - Follow [Conventional Commits](https://www.conventionalcommits.org/).
 - Keep commits focused — one logical change per commit.
 - Use the imperative mood, 50-char subject line max.
-- The pre-commit hook runs ESLint + Prettier on staged files.
+- The pre-commit hook runs oxlint + Prettier on staged files.
 
 ## CI
 
