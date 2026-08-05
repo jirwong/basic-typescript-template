@@ -1,5 +1,7 @@
 # Basic TypeScript Template
 
+[![CI](https://github.com/jirwong/basic-typescript-template/actions/workflows/ci.yml/badge.svg)](https://github.com/jirwong/basic-typescript-template/actions/workflows/ci.yml)
+
 A minimal, opinionated TypeScript template for Node.js projects. Includes modern tooling for development, testing, and code quality.
 
 ## Quick Start
@@ -91,7 +93,6 @@ pnpm test:watch
 - **@t3-oss/env-core** - Type-safe environment variables
 - **dotenv** - Load `.env` files
 - **Zod** - TypeScript-first schema validation
-- **es-toolkit** - Modern utility functions
 
 ## Code Quality
 

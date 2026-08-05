@@ -56,7 +56,7 @@ This file provides guidance to AI coding agents when working with code in this r
 - **Linting:** ESLint 10.8.0 + @eslint/js (typescript-eslint parser only; no type-aware rules — use `tsc` for type errors)
 - **Formatting:** Prettier 3.9.6
 - **Git hooks:** Lefthook 2.1.10 + lint-staged 17.3.0
-- **Runtime deps:** @t3-oss/env-core 0.13.11, dotenv 17.4.2, zod 4.4.3, es-toolkit 1.50.0
+- **Runtime deps:** @t3-oss/env-core 0.13.11, dotenv 17.4.2, zod 4.4.3
 
 ## Conventions
 

@@ -43,7 +43,6 @@
   "dependencies": {
     "@t3-oss/env-core": "^0.13.11",
     "dotenv": "^17.4.2",
-    "es-toolkit": "^1.50.0",
     "zod": "^4.4.3"
   },
   "lint-staged": {
