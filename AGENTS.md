@@ -7,7 +7,7 @@ This file provides guidance to AI coding agents when working with code in this r
 ### Build & Development
 
 - **`pnpm build`** - Compile TypeScript to JavaScript with esbuild (outputs to `dist/`)
-- **`pnpm dev`** - Build with esbuild and run once
+- **`pnpm dev`** - Run the TypeScript entry point with tsx
 - **`pnpm dev:watch`** - Watch `src/` and rebuild/rerun on changes via tsx watch
 
 ### Type Checking & Linting
