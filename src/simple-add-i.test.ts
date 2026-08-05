@@ -13,4 +13,8 @@ describe('addI', () => {
   it('adds zero', () => {
     expect(addI(7, 0)).toBe(7);
   });
+
+  it('adds 2+2=4', () => {
+    expect(addI(2, 2)).toBe(4);
+  });
 });
