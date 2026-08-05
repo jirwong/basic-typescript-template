@@ -6,8 +6,8 @@ A minimal, opinionated TypeScript template for Node.js projects. Includes modern
 
 ### Prerequisites
 
-- **Node.js 22.16.0** (managed by `.node-version` and `.nvmrc`)
-- **pnpm 10.26.1** (see `packageManager` in `package.json`)
+- **Node.js 24.12.0** (managed by `.node-version` and `.nvmrc`)
+- **pnpm 11.20.0** (see `packageManager` in `package.json`)
 
 ### Setup
 
@@ -72,17 +72,17 @@ pnpm test:watch
 
 ### Core
 
-- **TypeScript 5.9.3** - Type-safe JavaScript with strict mode
-- **esbuild 0.27.3** - Fast bundler and compiler
-- **Node.js 22.16.0** - JavaScript runtime
+- **TypeScript 6.0.3** - Type-safe JavaScript with strict mode
+- **esbuild 0.28.1** - Fast bundler and compiler
+- **Node.js 24.12.0** - JavaScript runtime
 
 ### Development & Quality
 
-- **Vitest 4.0.18** - Fast unit testing
-- **ESLint 10.0.1** - Code linting with TypeScript support
-- **Prettier 3.8.1** - Code formatting
-- **Lefthook 2.1.1** - Git hooks for automated checks
-- **nodemon 3.1.14** - Development auto-reload
+- **Vitest 4.1.10** - Fast unit testing
+- **ESLint 10.8.0** - Code linting with TypeScript support
+- **Prettier 3.9.6** - Code formatting
+- **Lefthook 2.1.10** - Git hooks for automated checks
+- **tsx 4.23.7** - Development auto-reload
 
 ### Runtime Dependencies
 
