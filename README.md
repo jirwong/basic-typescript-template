@@ -47,8 +47,8 @@ pnpm test:watch
 | `pnpm dev:watch`     | Watch src and re-run on changes             |
 | `pnpm build`         | Compile TypeScript to JavaScript in `dist/` |
 | `pnpm typecheck`     | Type-check without emitting code            |
-| `pnpm lint`          | Run ESLint on src directory                 |
-| `pnpm lint:fix`      | Run ESLint with auto-fix                    |
+| `pnpm lint`          | Run oxlint on src directory                 |
+| `pnpm lint:fix`      | Run oxlint with auto-fix                    |
 | `pnpm test`          | Run tests once with Vitest                  |
 | `pnpm test:watch`    | Run tests in watch mode                     |
 | `pnpm test:coverage` | Run tests and report code coverage          |
@@ -66,9 +66,11 @@ pnpm test:watch
 ├── .nvmrc                 # Node version for NVM
 ├── tsconfig.json          # TypeScript configuration
 ├── package.json           # Dependencies and scripts
-├── prettier.config.js     # Prettier configuration
-├── eslint.config.js       # ESLint configuration
+├── prettier.config.mjs    # Prettier configuration
+├── vitest.config.ts       # Vitest configuration
 ├── lefthook.yml           # Git hooks configuration
+├── .gitattributes         # Line-ending normalization (LF)
+├── .github/               # CI, Dependabot, and issue/PR templates
 └── README.md              # This file
 ```
 
@@ -76,14 +78,14 @@ pnpm test:watch
 
 ### Core
 
-- **TypeScript 6.0.3** - Type-safe JavaScript with strict mode
+- **TypeScript 7.0.2** - Type-safe JavaScript with strict mode
 - **esbuild 0.28.1** - Fast bundler and compiler
 - **Node.js 24.12.0** - JavaScript runtime
 
 ### Development & Quality
 
 - **Vitest 4.1.10** - Fast unit testing
-- **ESLint 10.8.0** - Code linting with TypeScript support
+- **oxlint 1.77.0** - Fast Rust-based linter
 - **Prettier 3.9.6** - Code formatting
 - **Lefthook 2.1.10** - Git hooks for automated checks
 - **tsx 4.23.7** - Development auto-reload
@@ -100,7 +102,7 @@ pnpm test:watch
 
 Git hooks are automatically installed when you run `pnpm install`:
 
-- Runs ESLint on staged TypeScript files
+- Runs oxlint on staged TypeScript files
 - Formats code with Prettier
 - Ensures code quality before commits
 
