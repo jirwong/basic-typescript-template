@@ -60,7 +60,6 @@ This is a minimal TypeScript template project. The structure is straightforward:
 - **@t3-oss/env-core 0.13.11** - Type-safe environment variable management
 - **dotenv 17.4.2** - Load environment variables from .env files
 - **Zod 4.4.3** - TypeScript-first schema validation
-- **es-toolkit 1.50.0** - Utility library with modern JavaScript functions
 
 ## Development Notes
 
