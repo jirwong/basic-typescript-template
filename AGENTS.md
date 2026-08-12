@@ -58,6 +58,7 @@ This file provides guidance to AI coding agents when working with code in this r
 - **Linting:** oxlint 1.77.0 (syntax-level rules; use `tsc` for type errors)
 - **Formatting:** Prettier 3.9.6
 - **Git hooks:** Lefthook 2.1.10 + lint-staged 17.3.0
+- **Node types:** @types/node 24.13.3
 - **Runtime deps:** @t3-oss/env-core 0.13.11, dotenv 17.4.2, zod 4.4.3
 
 ## Conventions
@@ -77,6 +78,7 @@ This file provides guidance to AI coding agents when working with code in this r
 - Print width: 120 characters
 - Trailing commas: `all`
 - Arrow parens: always
+- Files in `.prettierignore` are excluded from formatting
 
 ### Testing
 
@@ -91,6 +93,8 @@ This file provides guidance to AI coding agents when working with code in this r
 - Commits should follow [Conventional Commits](https://www.conventionalcommits.org/)
 - Keep commits focused — one logical change per commit
 - Imperative mood, 50-char subject line max
+- If more context is needed, add a blank line followed by a body (wrap at 72 characters)
+- Run `pnpm prepare` to install hooks (automatically run on `npm install`)
 
 ### Environment Variables
 
