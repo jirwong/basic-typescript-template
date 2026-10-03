@@ -29,18 +29,18 @@
     "@types/node": "^26.2.0",
     "@vitest/coverage-v8": "^4.1.11",
     "esbuild": "^0.28.2",
-    "lefthook": "^2.1.10",
-    "lint-staged": "^17.3.0",
-    "oxlint": "^1.79.0",
-    "prettier": "^3.9.6",
-    "tsx": "^4.23.12",
+    "lefthook": "^2.1.14",
+    "lint-staged": "^17.5.1",
+    "oxlint": "^1.83.0",
+    "prettier": "^3.9.8",
+    "tsx": "^4.23.15",
     "typescript": "^7.0.2",
     "vitest": "^4.1.11"
   },
   "dependencies": {
     "@t3-oss/env-core": "^0.13.11",
     "dotenv": "^17.4.2",
-    "zod": "^4.4.3"
+    "zod": "^4.6.5"
   },
   "lint-staged": {
     "*.{ts,tsx}": [
